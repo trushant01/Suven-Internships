@@ -66,20 +66,7 @@ public class HomeInventory extends JFrame {
 
     }
 
-    public HomeInventory() {
-        // frame constructor
-        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-        setTitle("Home Inventory Manager");
-        setResizable(false);
-        setPreferredSize(new Dimension(500, 500));
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((int) (0.5 * (screenSize.width - 620)), (int) (0.5 * (screenSize.height - 475)), 620, 475);
-
-        addWindowListener(new WindowAdapter(){
-                public void windowClosing(WindowEvent evt){
-                    exitForm(evt);
-                }
-            });
+    
         getContentPane().setLayout(new GridBagLayout());
         GridBagConstraints gridConstraints;
         //pack();
